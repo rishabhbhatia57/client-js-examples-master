@@ -18,8 +18,6 @@
           //   document.body.innerHTML = '<a href="' + url.href + '">Click here to simulate EHR launch</a>';
           // }
           // else {
-            // console.log(LocalStorage);
-            console.log(LocalStorage.getItem(FHIR));
             FHIR.oauth2.authorize({
 
               // The client_id that you should have obtained after registering a client at
@@ -31,7 +29,7 @@
               response_type: "code",
               redirectUri: encodeURIComponent("index.html"),
               clientId: "f8e2f73f-7b10-4b2e-9fd3-ebd228380db9",
-              clientSecret: "Pu63bx211tAQQEhmqVhpSXDLm5MKoDmm7F3ZLKqtOpjgejFNpISR3LhCb/nz07Xe0M4VNj86iDi/cdahWQ7Fsg==",
+              clientSecret: "Pu63bx211tAQQEhmqVhpSXDLm5MKoDmm7F3ZLKqtOpjgejFNpISR3LhCb/nz07Xe0M4VNj86iDi/cdahWQ7Fsg=="
               // Typically, if your redirectUri points to the root of the current directory
               // (where the launchUri is), you can omit this option because the default
               // value is ".". However, some servers (like this one) do not support directory
@@ -39,8 +37,6 @@
               // in that directory.
               // redirectUri: "index.html"
             });
-            console.log(LocalStorage);
-            console.log(LocalStorage.getItem(FHIR));
           // }
         </script>
     </body>

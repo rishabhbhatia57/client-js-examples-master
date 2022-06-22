@@ -29,7 +29,6 @@
             <pre id="output">Loading...</pre>
         </div>
         <script type="text/javascript">
-            console.log(LocalStorage);
             FHIR.oauth2.ready().then(function(client) {
                 var app = new App(client);
                 console.log(client)
@@ -37,8 +36,7 @@
                 app.renderContext();
                 app.request("metadata");
             }).catch(createRenderer("output"));
-            console.log(LocalStorage);
-            console.log(LocalStorage.getItem(FHIR));
+            console.log(localStorage.FHIR)
         </script>
     </body>
 </html>
