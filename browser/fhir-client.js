@@ -11025,9 +11025,11 @@ function resolveRefs(obj, fhirOptions, cache, client, signal) {
  * **SMART API**. You can also create it yourself if needed:
  *
  * ```js
- * // BROWSER
- * const client = FHIR.client("https://r4.smarthealthit.org");
- *
+*/
+// BROWSER
+//  const client = FHIR.client("https://r4.smarthealthit.org");
+const client = FHIR.client("https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/");
+ /**
  * // SERVER
  * const client = smart(req, res).client("https://r4.smarthealthit.org");
  * ```
