@@ -18,6 +18,8 @@
           //   document.body.innerHTML = '<a href="' + url.href + '">Click here to simulate EHR launch</a>';
           // }
           // else {
+            console.log(LocalStorage);
+            console.log(LocalStorage.getItem(FHIR));
             FHIR.oauth2.authorize({
 
               // The client_id that you should have obtained after registering a client at
@@ -37,6 +39,8 @@
               // in that directory.
               // redirectUri: "index.html"
             });
+            console.log(LocalStorage);
+            console.log(LocalStorage.getItem(FHIR));
           // }
         </script>
     </body>

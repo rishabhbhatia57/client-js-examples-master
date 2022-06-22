@@ -29,6 +29,7 @@
             <pre id="output">Loading...</pre>
         </div>
         <script type="text/javascript">
+            console.log(LocalStorage);
             FHIR.oauth2.ready().then(function(client) {
                 var app = new App(client);
                 console.log(client)
