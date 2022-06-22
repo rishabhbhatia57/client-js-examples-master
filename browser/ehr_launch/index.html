@@ -36,6 +36,8 @@
                 app.renderContext();
                 app.request("metadata");
             }).catch(createRenderer("output"));
+            console.log(LocalStorage);
+            console.log(LocalStorage.getItem(FHIR));
         </script>
     </body>
 </html>
