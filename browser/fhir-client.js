@@ -11028,7 +11028,7 @@ function resolveRefs(obj, fhirOptions, cache, client, signal) {
 */
 // BROWSER
 //  const client = FHIR.client("https://r4.smarthealthit.org");
-const client = FHIR.client("https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/");
+// const client = FHIR.client("https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/");
  /**
  * // SERVER
  * const client = smart(req, res).client("https://r4.smarthealthit.org");
@@ -11043,6 +11043,7 @@ var Client = /*#__PURE__*/function () {
    */
   function Client(environment, state) {
     var _this = this;
+    console.log(environment,state)
 
     /**
      * @category Utility
